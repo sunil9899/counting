@@ -1,0 +1,36 @@
+<html>
+<head>
+    <style>
+        fieldset{
+        width:400;
+        background-color:lightpink;
+        padding:40px;
+        margin:200px 40px 10px 450px;
+        }
+        form{
+        padding:50px;
+        }
+        legend{
+        padding:30px;
+        border:1px solid black;
+        background-color:lightyellow;
+        }
+        h3{
+        color:red;
+        }
+    </style>
+</head>
+<body bgcolor="lightpink">
+
+<h4 style="color:green"> <a style="color:yellow" href="{% url 'abt' %}"> About</a></h4>
+<h3><marquee> Welcome To Our Website And We Thanks For Your Visit </marquee></h3>
+<fieldset>
+    <legend> Login Form </legend>
+    <form name="login" action="{% url 'interaction' %}">
+        Username: <input type="text"> <br> <br>
+        Password: &nbsp;<input type="Password"> <br>
+        <pre>         <input type="submit" value="Login Here"> </pre>
+    </form>
+</fieldset>
+</body>
+</html>

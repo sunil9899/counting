@@ -1,0 +1,28 @@
+<table>
+    <tr>
+<td><h4 style="color:red, background-color:black, text-align:right"> <a href="{% url 'interaction' %}">Back</a> </h4></td>
+        <td><h4 style="color:red, background-color:black, text-align:left"> <a href="{% url 'Home' %}">Home</a> </h4></td>
+    </tr>
+</table>
+
+<h2 style="color:green"> Below Are The Results, You Looking For..... </h2>
+
+<h3 style="color:gray"> Entered Sentence OR Paragraph is:  </h3>
+
+{{ para }}
+
+<h3 style="color:gray"> Number of words in Entered Sentence OR Paragraph is:  </h3>
+
+{{ data_len }}
+
+<h3 style="color:gray"> Number of Characters in Entered Sentence OR Paragraph is:  </h3>
+
+{{ letter_count }}
+
+<h3 style="color:gray"> Counters of Words in Entered Sentence OR Paragraph is:  </h3>
+
+{% for key,value in repeated_words %}
+
+{{ key }} = {{ value }}
+<br>
+{% endfor %}
